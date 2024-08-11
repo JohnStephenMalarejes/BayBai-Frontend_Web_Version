@@ -8,6 +8,7 @@ const Livecam = () => {
 
   useEffect(() => {
 
+
     navigator.mediaDevices.getUserMedia({ video: true })
       .then((stream) => {
         if (videoRef.current) {
